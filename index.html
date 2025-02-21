@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== Favicon ====== -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!-- ====== Boxicons ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ====== Swiper CSS ====== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Coffee Shop</title>
+  </head>
+  <body>
+    <!-- ==== Header ==== -->
+     <header class="header">
+        <nav class="navbar">
+            <div class="row container d-flex">
+                <div class="logo">
+                    <img src="https://www.svgrepo.com/show/492596/food.svg" alt="" height="50" width="50"/>
+                </div>
+
+                <div class="nav-list d-flex">
+                    <a href="home.html">HOME</a>
+                    <a href="shop.html">SHOP</a>
+                    <a href="pages.html">PAGES</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="">Lookups</a>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+
+                    <div class="icons d-flex">
+                        <div class="icon d-flex"><i class="bx bx-search"></i></div>
+                        <div class="icon user-icon d-flex">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="icon d-flex">
+                            <i class="bx bx-bell"></i>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <!--Dolce Latte-->
+                    <div class="dolcelatte">
+                        <i class="bx bx-menu-alt-right"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div class="row container d-flex">
+                    <div class="col">
+                        <span class="title">Limited to buy coffee</span>
+                        <h1>King Coffee<span class="i">i</span></h1>
+                        <p>CHOOSE YOUR BEST DRINK</p>
+
+                        <a href="find.html" class="btn">FIND NOW!</button>
+                    </div>
+                    <img src="https://png.pngtree.com/png-vector/20240416/ourmid/pngtree-latte-isolated-on-transparent-background-png-image_12286449.png" alt="" 
+                    height="50" width="50"/>
+                </div>
+            </div>
+     </header>
+     <!-- ====COLLECTION ==== -->
+      <section class="section collection">
+        <div class="title">
+            <span>COFFEE BEST</span>
+            <h2>Our Top Coffee</h2>
+        </div>
+        <div class="filters d-flex">
+            <div data-filter="Cappucino">Cappucino</div>
+            <div data-filter="Dolce Latte">Dolce Latte</div>
+            <div data-filter="Frapucinno">Frapucinno</div>
+            <div data-filter="Gula Aren">Gula Aren</div>
+        </div>
+
+        <div class="products container">
+            <div class="swiper mySwiper">
+                <div class="swipper-wrapper" id="products">
+                    <div class="swiper-slide">
+                        <div class="top d-flex">
+                          <img src="https://png.pngtree.com/png-vector/20240620/ourmid/pngtree-cinnamon-dolce-latte-isolated-on-white-background-delicious-tiramisu-ice-cream-png-image_12812583.png" alt=""
+                          height="50" width="50" />
+                          <div class="icon d-flex">
+                            <i class="bx bxs-heart"></i>
+                          </div>
+                        </div>
+                        <div class="bottom">
+                            <h4>ICE DOLCE LATTE - SWEET DELICIOUS</h4>
+                            <div class="d-flex">
+                                <div class="price">Rp.35.000</div>
+                                <div class="rating">
+                                    <i class="bx-bxs-star"></i>
+                                    <i class="bx-bxs-star"></i>
+                                    <i class="bx-bxs-star"></i>
+                                    <i class="bx-bxs-star"></i>
+                                    <i class="bx-bxs-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="custom-pagination"></div>
+        </div>
+    </div>
+      </section>
+
+      <section class="section new-arrival">
+        <div class="title">
+            <span>NEW COFFEE</span>
+            <h2>Latest Collection</h2>
+        </div>
+
+        <div class="row container">
+            <div class="col col-1">
+                <img src="https://static.vecteezy.com/system/resources/previews/018/927/053/original/coffee-board-vintage-color-png.png" alt="" 
+                height="50" width="50" />
+                <h3>
+                    2024 Trends <br />
+                    A Coffee Lover
+                </h3>
+            </div>
+            <div class="col col-2">
+                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Coffee-cup-icon-on-transparent-background-PNG.png" alt=""
+                height="50" width="50" />
+                <h3>
+                    2024 Trends <br />
+                    A Coffee Lover
+                </h3>
+            </div>
+            <div class="col col-3">
+                <img src="https://parspng.com/wp-content/uploads/2022/12/coffeepng.parspng.com-9.png" alt=""
+                height="50" width="50" />
+                <h3>
+                    2024 Trends <br />
+                    A Coffee Lover
+                <span>Discover More:</span>
+                </h3>
+            </div>
+        </div>
+      </section>
+
+      <!-- === Categories === -->
+       <section class="section categories">
+        <div class="title">
+            <span>CATEGORY</span>
+            <h2>2024 LATEST COFFEE</h2>
+        </div>
+
+        <div class="products container">
+            <div class="top d-flex">
+                <img src="https://clipart-library.com/images/ziX5k5EXT.jpg" alt="" height="50" width="50"/>
+                <div class="icon d-flex">
+                    <i class="bx bxs-heart"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="d-flex">
+                    <h4>ICE CAPPUCINO - SWEET TASTE</h4>
+                    <a href="" class="btn cart-btn">Add to Cart</a>
+                </div>
+                <div class="d-flex">
+                    <div class="price">35000</div>
+                    <div class="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button d-flex">
+        <a class="btn loadmore">Load More</a>
+    </div>
+</section>
+
+<section class="section statistics">
+    <div class="title">
+        <span>STATISTIC</span>
+        <h2>OUR STATS</h2>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+            <div class="icon">
+                <i class="bx bxs-check-square"></i>
+            </div>
+            <h3>Good for Order System</h3>
+            <p>Choose what do you like</p>
+        </div>
+        <div class="col">
+            <div class="icon">
+                <i class="bx bxs-user"></i>
+            </div>
+            <h3>Time Delivered</h3>
+            <p>Choose What Do You Like</p>
+        </div>
+        <div class="col">
+            <div class="icon">
+                <i class="bx-bxs-dollar-circle"></i>
+            </div>
+            <h3>Money Guaranteed</h3>
+            <p>Your Money Will Be Guarantee</p>
+        </div>
+        <div class="col">
+            <div class="icon">
+                <i class="bx bxs-user"></i>
+            </div>
+            <h3>Customer Support Service</h3>
+            <p>WE WILL SERVICE TO BE THE BEST TO OUR CUSTOMER</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Blogs ===== -->
+ <section class="section blog">
+    <div class="title">
+        <span>OUR BLOG</span>
+        <h2>LAST NEWS</h2>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+        <div class="top">
+            <img src="https://cdn.pixabay.com/photo/2020/12/15/19/35/coffee-5834745_960_720.png" alt=""
+             height="500" width="500" />
+        </div>
+        <div class="bottom">
+            <h3>The Trending</h3>
+            <h4>
+                The Coffee Was Always Trending
+            </h4>
+            <span>11 January 2024</span>
+        </div>
+        </div>
+        <div class="col">
+        <div class="top">
+            <img src="https://c0.wallpaperflare.com/preview/452/100/984/restaurant-bar-coffee-shop.jpg" alt=""
+            height="500" width="500"/>
+        </div>
+        <div class="bottom">
+            <h3>The Trending</h3>
+            <h4>
+                Come Let's Drink Coffee 
+            </h4>
+            <span>11 January 2024</span>
+        </div>
+        </div>
+        <div class="col">
+            <div class="top">
+              <img src="https://wallpapers.com/images/featured/coffee-shop-background-02x9a49rdcr5c18i.jpg" alt=""
+              height="500" width="500"/>
+            </div>
+            <div class="bottom">
+                <h3>The Trending</h3>
+                <h4>
+                    More Here Not Enjoy Must Drink Coffee 
+                </h4>
+                <span>11 January 2024</span>
+            </div>
+        </div>
+    </div>
+ </section>
+
+ <!-- ==== Footer === -->
+  <footer class="footer">
+    <div class="row container">
+        <div class="col">
+            <div class="logo d-flex">
+                <img src="https://icons.veryicon.com/png/o/food--drinks/minnie-bakery-02/coffee-41.png" alt=""
+                height="50" width="50"/>
+            </div>
+            <p>
+                WHAT MAKES YOU HAPPY WHEN YOU DRINK 
+                A CUP OF COFFEE
+            </p>
+            <div class="icons d-flex">
+                <div class="icon d-flex">
+                    <i class="bx bxl-facebook"></i>
+                </div>
+                <div class="icon d-flex"><i class="bx bxl-tiktok"></i></div>
+                <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+                <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+            </div>
+            <p class="color">
+                Copyrights 2024 <br />
+                @kingscoffee
+            </p>
+        </div>
+        <div class="col">
+            <div>
+                <h4>Product</h4>
+                <a href="download.html">Download</a>
+                <a href="price.html">Price</a>
+                <a href="location.html">Location</a>
+                <a href="">Server</a>
+                <a href="country.html">Country</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div>
+                <h4>Category</h4>
+                <a href="coffee.html">Coffee</a>
+                <a href="breakfast.html">Breakfast Food</a>
+                <a href="juice.html">Juice</a>
+                <a href="bestselling.html">Best Selling</a>
+                <a href="newarrived.html">New Arrived</a>
+            </div>
+            <div>
+                <h4>My Account</h4>
+                <a href="myaccount.html">My Account</a>
+                <a href="orderhistory.html">Order History</a>
+                <a href="ordertrack.html">Order Tracking</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <div class="d-flex">
+                    <div class="icon"><i class="bx bxs-map"></i></div>
+                    <span>Jl Pangkalan Jati 10 No 100, Depok, Indonesia</span>
+                </div>
+                <div class="d-flex">
+                    <div class="icon"><i class="bx bxs-envelope"></i></div>
+                    <span>info@kingscoffee.com</span>
+                </div>
+                <div class="d-flex">
+                    <div class="icon"><i class="bx bxs-phone"></i></div>
+                    <span>0822-1188-1443</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <div class="user-form">
+    <div class="close-form d-flex"><i class="bx bx-x"></i></div>
+    <div class="form-wrapper container">
+        <div class="user login">
+            <div class="img-box">
+                <img src="https://www.svgrepo.com/show/146318/user-login-button.svg" alt="" height="50" width="50" />
+            </div>
+            <div class="form-box">
+                <div class="top">
+                    <p>
+                        NOT MEMBER?
+                        <span data-id="#ff0066">Register</span>
+                    </p>
+                </div>
+                <form action="">
+                    <div class="form-control">
+                        <h2>Hallo</h2>
+                        <p>Welcome Back Again</p>
+                        <input type="text" placeholder="Enter Your Name" />
+                        <div>
+                            <input type="password" placeholder="Password" /> 
+                            <div class="icon form-icon">
+                            </div>
+                        </div>
+                        <span>Recovery Password</span>
+                        <input type="submit" value="login" />
+                    </div>
+                    <div class="form-control">
+                        <p>Or Continue With</p>
+                        <div class="icons">
+                            <div class="icon">
+                                <img src="https://www.svgrepo.com/show/60570/search.svg" alt="" height="50" width="50" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://www.svgrepo.com/show/312462/lemon.svg" alt="" height="50" width="50" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" 
+                                alt="" height="50" width="50" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="user signup">
+            <div class="form-box">
+                <div class="top">
+                    <p>
+                        Already Member? 
+                        <span data-id="#1a1aff">Login</span>
+                    </p>
+                </div>
+                <form action="">
+                    <div class="form-control">
+                        <h2>Welcome Woy</h2>
+                        <p>So Happy to see you back</p>
+                        <input type="email" placeholder="Enter Your Email" />
+                        <div>
+                            <input type="password" placeholder="Password" />
+                            <div class="icon form-icon">
+                                <img src="https://www.svgrepo.com/show/11617/eye.svg alt=" height="50" width="50" />
+                            </div>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Confirm Password" />
+                            <div class="icon form-icon">
+                                <img src="https://www.svgrepo.com/show/11617/eye.svg" height="50" width="50" />
+                            </div>
+                        </div>
+                        <input type="submit" value="Register" />
+                    </div>
+                    <div class="form-control">
+                        <p>Or Continue With</p>
+                        <div class="icons">
+                            <div class="icon">
+                                <img src="https://www.svgrepo.com/show/60570/search.svg" alt="" height="50" width="50" />
+                            </div>
+                            <div class="icon">
+                                <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" alt="" height="50" width="50" />
+                            </div>
+                            <div class="icon">
+                                <img src="./images/search.svg" alt="" height="50" width="50" />
+                              </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="img-box">
+                <img src="https://cdn0.iconfinder.com/data/icons/webi-con-4-black/128/trial_2_copy-512.png" alt="" height="50" width="50" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="./js/product.js"></script>
+  <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+                        
+                        
+                            
+                    
+                        
+
+
+            
+                

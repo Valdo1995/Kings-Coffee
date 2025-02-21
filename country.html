@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .select__input {
+
+        appearance: none;
+        border: 0;
+        margin: 0;
+        font-size: 1rem;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 1rem;
+        box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1), 0 0 0 1px hsla(230,13%,9%,
+        0.02), 0 0.3px 0.4px hsla(230, 13%, 9%, 0.25), 0 1px 3px -1px hsla(230,13%,9%,
+        0.2), 0 3.5px 6px hsla(230, 13%, 9%, 0.12);
+        border-radius: 0.375em;
+        transition: box-shadow 0.2s;
+        user-select: none;
+    }
+
+    .select__input:focus {
+        outline: none;
+        box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1), 0 0 0 1px hsla(230, 13%, 9%,
+        0.02), 0 0.3px 0.4px hsla(230,13%,9%,0.025), 0 1px 3px -1px hsla(230, 13%, 9%,
+        0.2), 0 3.5px 6px hsla(230,13%, 9%, 0.12), 0 0 0 2px hsl(0, 0%, 100%), 0 0 0 4px 
+        hsl(230, 7%, 23%);
+    }
+
+    :root {
+        --select-icon-size: 16px;
+        --select-icon-margin: 1rem;
+        --select-text-icon-gap: 0.5rem;
+    }
+
+    .select {
+        position: relative;
+    }
+
+    .select__arrow,
+    .select__flag {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: var(--select-icon-size);
+        height: var(--select-icon-size);
+        pointer-events: none;
+    }
+
+    .select__arrow {
+        color: inherit;
+        right: var(--select-icon-margin);
+    }
+
+    .select__flag {
+        left: var(--select-icon-margin);
+    }
+
+    .select__input {
+        padding: 0.5rem calc(var(--select-icon-size) + var(--select-icon-margin) + 
+        var(--select-text-icon-gap));
+    }
+
+    .select__flag {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: var(--select-icon-size);
+        background-image: url("data:image/svg...");
+    }
+
+    .select:has(option[value="IT"]) {}
+    .select:has(option[value="IT"]:checked) {}
+    .select:has(option[value="IT"]:checked) .select__flag {
+        background-image: url("data:image/svg...");
+    }
+
+    a.button {
+            padding: 16px 42px;   
+            box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);   
+            line-height: 1.15;   
+            background: #FC6E51;   
+             text-decoration: none;   
+            color: white;   
+            font-size: 16px;   
+            letter-spacing: .08em;   
+            text-transform: uppercase;   
+            position: relative;   
+            transition: background-color .6s ease;   
+ 
+            overflow: hidden;   
+  &:after {     
+    content: "";     
+    position: absolute;     
+    width: 0;     
+    height: 0;     
+    top: 50%;     
+    left: 50%;     
+    transform-style: flat;     
+    transform: translate3d(-50%,-50%,0);     
+    background: rgba(white,.1);     
+    border-radius: 100%;     
+    transition: width .3s ease, 
+    height .3s ease;   
+  }   
+ 
+  &:focus,   
+  &:hover {       
+    background: 
+    darken(#FC6E51,7%);   
+  }   
+  &:active {     
+    &:after {       
+      width: 200px;       
+      height: 200px;     
+    }   
+  } 
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 50%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.footer {
+    background-color: rgba(252, 203, 144, 0.15);
+    padding: 10rem 3rem 10rem;
+    margin-top: 7rem;
+}
+.footer .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+.footer .row .col .logo {
+    margin-bottom: 2.5rem;
+}
+.footer .row .col:first-child p {
+    margin-bottom: 2rem;
+    color:#4f5665;
+    font-size: 1.7rem;
+}
+.footer .row .col .icons {
+    margin-bottom: 2rem;
+}
+.footer .row .col .icon {
+    color: var(--white-color);
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.footer .row .col .icon:not(:last-child) {
+    margin-right: 1rem;
+}
+.footer .row .col:first-child .color {
+    color: var(--primary-color);
+}
+.footer .row .col:last-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer .row .col:last-child div {
+    display: flex;
+    flex-direction: column;
+}
+.footer .row .col:last-child div a {
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: #4f5665;
+}
+.footer .row .col:last-child h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+.footer .row .col:last-child .d-flex {
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.footer .row .col:last-child .d-flex .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    padding: 0.7rem;
+}
+.footer .row .col:last-child .d-flex span {
+    font-size: 1.8rem;
+    color: #4f5665;
+}
+
+@media (max-width:1200px) {
+    .footer .col:first-child {
+        display: none;
+    }
+
+    .footer .row {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .footer .row .col:last-child {
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    } 
+}
+
+.icon img {
+    width: 20px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="select">
+        <span class="select__flag" aria-hidden="true"></span>
+
+        <select class="select__input" name="country-selector" id="country-selector">
+            <option value="0">Select Option</option>
+            <option value="IT">Italy</option>
+            <option value="ES">Spain</option>
+            <option value="UK">United Kingdom</option>
+            <option value="INA">Indonesia</option>
+            <option value="JP">Japan</option>
+            <option value="SG">Singapore</option>
+        </select>
+    </br></br>
+
+            <a href="goes.html"  target = "_blank" class="button">GO</a>
+   
+        </br></br>
+
+        <h1>Location Of kingscoffee</h1>
+
+
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5844684088643!2d106.79075697589984!3d-6.318185361829125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee3fcc51e443%3A0x85bc4c5fcf39f634!2sdrinkopi%20cafe!5e0!3m2!1sid!2sid!4v1728977284734!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        </br></br>
+
+        <footer class="footer">
+            <div class="row container">
+                <div class="col">
+                    <div class="logo d-flex">
+                        <img src="https://icons.veryicon.com/png/o/food--drinks/minnie-bakery-02/coffee-41.png" alt=""
+                        height="50" width="50"/>
+                    </div>
+                    <p>
+                        WHAT MAKES YOU HAPPY WHEN YOU DRINK 
+                        A CUP OF COFFEE
+                    </p>
+                    <div class="icons d-flex">
+                        <div class="icon d-flex">
+                            <i class="bx bxl-facebook"></i>
+                        </div>
+                        <div class="icon d-flex"><i class="bx bxl-tiktok"></i></div>
+                        <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+                        <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+                    </div>
+                    <p class="color">
+                        Copyrights 2024 <br />
+                        @kingscoffee
+                    </p>
+                </div>
+                <div class="col">
+                    <div>
+                        <h4>Product</h4>
+                        <a href="download.html">Download</a>
+                        <a href="price.html">Price</a>
+                        <a href="location.html">Location</a>
+                        <a href="">Server</a>
+                        <a href="country.html">Country</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div>
+                        <h4>Category</h4>
+                        <a href="coffee.html">Coffee</a>
+                        <a href="breakfast.html">Breakfast Food</a>
+                        <a href="juice.html">Juice</a>
+                        <a href="bestselling.html">Best Selling</a>
+                        <a href="newarrived.html">New Arrived</a>
+                    </div>
+                    <div>
+                        <h4>My Account</h4>
+                        <a href="myaccount.html">My Account</a>
+                        <a href="orderhistory.html">Order History</a>
+                        <a href="ordertrack.html">Order Tracking</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <div class="d-flex">
+                            <div class="icon"><i class="bx bxs-map"></i></div>
+                            <span>Jl Pangkalan Jati 10 No 100, Depok, Indonesia</span>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon"><i class="bx bxs-envelope"></i></div>
+                            <span>info@kingscoffee.com</span>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon"><i class="bx bxs-phone"></i></div>
+                            <span>0822-1188-1443</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </footer>
+
+        <svg class="select__arrow" aria-hidden="true" viewbox="0 0 16 16"><polyline 
+            points="3.5,6.5 8,11 12.5,6.5" stroke-width="2" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+    </div>
+</body>
+</html>
+
+    

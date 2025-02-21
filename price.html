@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="CodeHim">
+        <title>Price Of Coffee Joy</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    background-image:-webkit-image-set(2);
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2, .g-price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.g-price {
+    margin: 8px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+    .container {
+        display: block;
+    }
+}
+
+.screen-togo, .screen-cart {
+    width: 375px;
+    max-height: 770px;
+    overflow: scroll;
+    border-radius: 25px;
+    background: whitesmoke;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {
+    background: #E4F0FD;
+    border-radius: 20px 0 0 20px;
+    margin: 30px 0;
+    padding-top: 15px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.menu-item:nth-child(2n) {
+    background: #FBE4F0;
+}
+
+.menu-item:nth-child(3n) {
+    background: #f7f7fe;
+}
+
+.menu-item:nth-child(4n) {
+    background: #E4FDF1;
+}
+
+.menu-item img {
+    width: 150px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.menu-item .add-button {
+    position: absolute;
+    border: none;
+    background: #6B00F5;
+    padding: 6px 20px 4px;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 15px;
+    bottom: -10px;
+    left: 150px;
+    transition: all 0.3s;
+}
+
+.menu-item .add-button:hover {
+    background: #5815ae;
+}
+
+.menu-item-dets {
+    margin-left: 150px;
+    padding-bottom: 15px;
+}
+
+.menu-items-heading {
+    font-size: 18px;
+    margin: 10px 0 12px;
+}
+
+.screen-cart {
+    padding-right: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #D7D7F9;
+    animation: fadeIn 0.3s;
+}
+
+.cart-item:last-child {
+    border-bottom: 5px solid #D7D7F9;
+}
+
+.cart-item img {
+    width: 65px;
+}
+
+.cart-item .g-price {
+    font-size: 25px;
+}
+
+.cart-item-dets {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.cart-item-heading {
+    margin: 10px 0;;
+}
+
+.cart-math-item {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.cart-math-item span {
+    display: inline-block;
+    text-align: right;
+}
+
+.cart-math-item .cart-math-header {
+    width: 50%;
+}
+
+.cart-math-item .g-price {
+    width: 40%;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{ margin: 0; padding: 0;}
+body{
+  font-style: normal;
+  font-weight: 300;
+  font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+}
+.intro{
+   background: #fff;
+   padding: 60px 30px;
+   color: #333;
+   margin-bottom: 15px;
+   line-height: 1.5;
+   text-align: center;
+}
+.intro h1 {
+   font-size: 18pt;
+   padding-bottom: 15px;
+
+}
+.intro p{
+   font-size: 14px;
+}
+
+.action{
+   text-align: center;
+   display: block;
+   margin-top: 20px;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #666;
+   border: 2px solid #666;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-left: 5px;
+}
+a.btn:hover{
+   background: #666;
+   color: #fff;
+    transition: .3s;
+-webkit-transition: .3s;
+}
+.btn:before{
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.github:before{content: "\f09b"}
+.down:before{content: "\f019"}
+.back:before{content:"\f112"}
+.credit{
+    background: #fff;
+    padding: 12px;
+    font-size: 9pt;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+
+}
+.credit span:before{
+   font-family: FontAwesome;
+   color: #e41b17;
+   content: "\f004";
+
+
+}
+.credit a{
+   color: #333;
+   text-decoration: none;
+}
+.credit a:hover{
+   color: #1DBF73; 
+}
+.credit a:hover:after{
+    font-family: FontAwesome;
+    content: "\f08e";
+    font-size: 9pt;
+    position: absolute;
+    margin: 3px;
+}
+main{
+  background: #fff;
+  padding:: 20px;
+  
+}
+
+article li{
+   color: #444;
+   font-size: 15px;
+   margin-left: 33px;
+   line-height: 1.5;
+   padding: 5px;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article p{
+   padding: 14px;
+   color: #333;
+}
+article p{
+   font-size: 15px;
+    line-height: 1.5;
+}
+ 
+@media only screen and (min-width: 1280px){
+    main{
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; 
+      padding: 24px;
+    }
+
+
+}
+
+.set-overlayer,
+.set-glass,
+.set-sticky {
+	cursor: pointer;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 15px;
+	color: #333;
+	font-size: 16px;
+}
+.set-overlayer:after,
+.set-glass:after,
+.to-active:after,
+.set-sticky:after {
+	font-family: FontAwesome;
+	font-size: 18pt;
+	position: relative;
+	float: right;
+}
+.set-overlayer:after,
+.set-glass:after,
+.set-sticky:after {
+	content: "\f204";
+	transition: .6s;
+}
+
+.to-active:after {
+	content: "\f205";
+	color: #008080;
+	transition: .6s;
+}
+.set-overlayer,
+.set-glass,
+.set-sticky,
+.source,
+.theme-tray {
+	margin: 10px;
+	background: #f2f2f2;
+	border-radius: 5px;
+	border: 2px solid #f1f1f1;
+	box-sizing: border-box;
+}
+/* Syntax Highlighter*/
+
+pre.prettyprint {
+	padding: 15px !important;
+   margin: 10px;
+	border: 0 !important;
+  background: #f2f2f2;
+  overflow: auto;
+}
+
+.source {
+	white-space: pre;
+	overflow: auto;
+	max-height: 400px;
+}
+code{
+    border:1px solid #ddd;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+a.button {
+    padding: 16px 42px;   
+            box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);   
+            line-height: 1.15;   
+            background: #FC6E51;   
+             text-decoration: none;   
+            color: white;   
+            font-size: 16px;   
+            letter-spacing: .08em;   
+            text-transform: uppercase;   
+            position: relative;   
+            transition: background-color .6s ease;   
+            overflow: hidden;
+            position: absolute;   
+}
+
+
+</style>
+</head>
+    
+<body>
+   <header class="intro">
+   <h1>Do you want coffee?? Let's joy it</h1>
+
+   <div class="action">
+    <a href="backhome.html" title="Back Home" class="btn back">Back To Page</a>
+   </div>
+   </header>
+
+   <main>
+    <div class="container">
+        <div class="screen-togo">
+            <h2>Go To Menu</h2>
+            <ul class="menu-items">
+
+                <li class="menu-item">
+                    <img src="https://kurio-img.kurioapps.com/19/05/28/50de339f-7e20-4738-b9a4-a2ba49991add.jpg"  alt="Hot Cappucino" class="menu-image"
+                    height="50" width="50">
+                    <div class="menu-item-dets">
+                        <p class="menu-item-heading">Hot Cappucino</p>
+                        <p class="g-price">Rp20.000</p>
+                    </div>
+                    <button 
+                        class="add-button"
+                        data-title="Hot Cappucino"
+                        data-price="20.000">Add To Cart</button>
+                </li>
+                <li class="menu-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/003/826/608/large_2x/iced-cappuccino-in-glass-on-white-background-free-photo.jpg"
+                    alt="Ice Cappucino" class="menu-image" height="50" width="50">
+                    <div class="menu-item-dets">
+                        <p class="menu-item-heading">Ice Cappucino</p>
+                        <p class="g-price">Rp.35.000</p>
+                    </div>
+                    <button
+                    class="add-button"
+                    data-title="Ice CAPPUCINO"
+                    data-price="35.000">Add To Cart</button>
+                </li>
+                <li class="menu-item">
+                    <img src="https://www.midgetmomma.com/wp-content/uploads/2021/07/Iced-cinnamon-dolce-Starbucks-copy-cat-recipe-15.jpg"
+                    alt="Ice Dolce Latte Cinnamon" class="menu-image" height="50" width="50">
+                    <div class="menu-item-dets">
+                        <p class="menu-item-heading">Ice Dolce Latte Cinnamon</p>
+                        <p class="g-price">Rp.40.000</p>
+                    </div>
+                    <button
+                    class="add-button"
+                    data-title="Ice Dolce Latte Cinnamon"
+                    data-price="40.000">Add To Cart</button>
+                </li>
+                <li class="menu-item">
+                    <img src="https://asset.kompas.com/crops/abzfBx7I1v0rsldNAm3UjFoH63I=/0x0:1000x667/750x500/data/photo/2020/07/26/5f1d9e3132c94.jpg"
+                    alt="Es Kopi Gula Aren" height="50" width="50">
+                    <div class="menu-item-dets">
+                        <p class="menu-item-heading">Es Kopi Gula Aren</p>
+                        <p class="g-price">Rp.19.000</p>
+                    </div>
+                    <button
+                    class="add-button"
+                    data-title="Es Kopi Gula Aren"
+                    data-price="19.000">Add To Cart</button>
+                </li>
+            </ul>
+        </div>
+        <div class="screen-cart">
+            <h2>Cart Your</h2>
+            <ul class="cart-items">
+            </ul>
+
+            <div class="cart-math">
+                <p>Add Some Items To Cart</p>
+            </div>
+        </div>
+    </div>
+   </main>
+
+</br>
+
+<a href="food.html" class="button">Food Price</a>
+
+   <footer class="credit">A GOOD COFFEE IS ENJOY CUY <a title="kings Coffee" href="" target="_blank">kingscoffee</a></footer>
+
+   <footer class="footer">
+        <div class="row container">
+            <div class="col">
+                <div class="logo d-flex">
+                    <img src="https://icons.veryicon.com/png/o/food--drinks/minnie-bakery-02/coffee-41.png" alt=""
+                    height="50" width="50"/>"
+                </div>
+                <p>
+                    Don't Forget Wherever You Are Coffee Always
+                    important
+                </p>
+
+                <div class="icons d-flex">
+                    <div class="icon d-flex">
+                        <i class="bx bxl-facebook"></i>
+                    </div>
+                    <div class="icon d-flex"><i class="bx bxl-tiktok"></i></div>
+                    <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+                    <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+                </div>
+                <p class="col">
+                    Copyrights 2024 <br />
+                    @kingscoffee
+            </p>
+
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+   <script src="js/script.js"></script>
+
+   <script>
+    let subtotal = 0;
+
+    const calculateTax = subtotal => {
+        const tax = subtotal * 0.14;
+        const formattedTax = tax.toFixed(2);
+        return formattedTax;
+    };
+
+    const calculateTotal = subtotal => {
+        const tax = calculateTax(subtotal);
+        const total = parseFloat(subtotal) + parseFloat(tax);
+        const formattedTotal = total.toFixed(2);
+    };
+
+    const getImgLink = title => {
+        let imgLink;
+        switch (title) {
+            case 'Hot Cappucino': 
+              imgLink = 'https://kurio-img.kurioapps.com/19/05/28/50de339f-7e20-4738-b9a4-a2ba49991add.jpg';
+            break;
+            case 'Ice Cappucino': 
+              imgLink = 'https://static.vecteezy.com/system/resources/previews/003/826/608/large_2x/iced-cappuccino-in-glass-on-white-background-free-photo.jpg';
+            break;
+            case 'Ice Dolce Latte Cinnamon':
+              imgLink = 'https://www.midgetmomma.com/wp-content/uploads/2021/07/Iced-cinnamon-dolce-Starbucks-copy-cat-recipe-15.jpg';
+            break;
+            default: 'Es Kopi Gula Aren'
+              imgLink = 'https://asset.kompas.com/crops/abzfBx7I1v0rsldNAm3UjFoH63I=/0x0:1000x667/750x500/data/photo/2020/07/26/5f1d9e3132c94.jpg';}
+            
+            return imgLink; 
+        };
+
+        $('.add-button').on('click',function () {
+            const title = $(this).data('title');
+            const price = $(this).data('price');
+            const imglink = getImgLink(title); 
+
+            const element = `
+            <li class="cart-item"> 
+                <img src="${imglink}" alt="${title}">
+                <div class="cart-item-dets">
+                    <p class="cart-item-heading">${title}</p>
+                    <p class="g-price">$${price}</p>
+                    </div>
+                    </li>
+                    `;
+                   $('.cart-items').append(element);
+
+                subtotal = subtotal + price;
+
+                const formattedSubtotal = subtotal.toFixed(2);
+                const tax = calculateTax(subtotal);
+                const total = calculateTotal(subtotal);
+
+                $('.cart-math').html(`
+    <p class="cart-math-item">
+      <span class="cart-math-header">Subtotal:</span>
+      <span class="g-price subtotal">$${formattedSubtotal}</span>
+    </p>
+    <p class="cart-math-item">
+      <span class="cart-math-header">Tax:</span>
+      <span class="g-price tax">$${tax}</span>
+    </p>
+    <p class="cart-math-item">
+      <span class="cart-math-header">Total:</span>
+      <span class="g-price total">$${total}</span>
+    </p>
+  `);
+});
+
+</script>
+</body>
+</html>

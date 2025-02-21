@@ -1,0 +1,108 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Ice Dolce Latte - Sweet Delicious",
+            "price": "35000",
+            "url": "https://png.pngtree.com/png-vector/20240620/ourmid/pngtree-cinnamon-dolce-latte-isolated-on-white-background-delicious-tiramisu-ice-cream-png-image_12812583.png",
+            "category" : "Coffee"
+        },
+        {
+            "id": 2,
+            "title": "Ice Cappucino",
+            "price": "35000",
+            "url": "https://static.vecteezy.com/system/resources/previews/018/927/053/original/coffee-board-vintage-color-png.png",
+            "category": "Coffee"
+        },
+        {
+            "id": 3,
+            "title": "Gula Aren Latte",
+            "price": "15000",
+            "url": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/akuratco/images/akurat_20200811031920_p971On.jpg",
+            "category":"Coffee"
+        },
+        {
+            "id": 4,
+            "title": "Caramel Macchiato",
+            "price": "30000",
+            "url": "https://t3.ftcdn.net/jpg/01/31/06/30/360_F_131063001_CZpK2USJpVef4pqiCiIwpv6i4gocIgEK.jpg",
+            "category":"Coffee"
+        },
+        {
+            "id": 5,
+            "title": "Coffee Butterscotch",
+            "price": "40000",
+            "url": "https://www.redpathsugar.com/sites/redpathsugar_com/files/styles/m/public/2024-01/Classic_Butterscotch_Pudding-600x400.jpg.webp?itok=a4D6YwDv",
+            "category": "Coffee"
+        },
+        {
+            "Id": 6,
+            "title": "Roti Bakar Cokelat Keju",
+            "price": "12000",
+            "url":"https://niagatani.id/public/uploads/all/R19n6Svg2bH9HkKUmdRK7KZ8WnC0E0aB67Bz3eMi.jpg",
+            "category": "Breakfast Food"
+        },
+        {
+            "id": 7,
+            "title": "Omlete with Sosis",
+            "price": "45000",
+            "url":"https://awsimages.detik.net.id/community/media/visual/2024/01/14/resep-omelet-sosis-dan-sayuran.jpeg?w=600&q=90.jpg",
+            "category":"Breakfast Food"
+        },
+        {
+            "id": 8,
+            "title": "Bubur Ayam Spesial",
+            "price": "20000",
+            "url": "https://asset.kompas.com/crops/Kyp-MBp3Kf0PLGveth_zzhU2gfI=/0x0:1000x667/750x500/data/photo/2020/07/11/5f09e008e7fee.jpg",
+            "category":"Breakfast Food"
+        },
+        {
+            "id": 9,
+            "title": "Nasi Goreng Spesial Kecombrang",
+            "price": "25000",
+            "url": "https://www.masakapahariini.com/wp-content/uploads/2021/07/Nasi-Goreng-Spesial-Ayam-Kecombrang.jpg",
+            "category":"Breakfast Food"
+        },
+        {
+            "id": 10,
+            "title": "Nasi Kebuli",
+            "price": "55000",
+            "url": "https://cdn.idntimes.com/content-images/post/20210608/screenshot-2021-06-08-ai-quive-prjct-on-instagram-mytastemylife-nah-ini-makan-siangku-nasi-biryani-ayam-dari-nasikambi-b83c5d9b48832104f3928972d6dc843f_600x400.png",
+            "category":"Breakfast Food"
+        },
+        {
+            "id": 11,
+            "title": "Red Dragon Juice",
+            "price": "20000",
+            "url": "https://mocktail.net/wp-content/uploads/2022/05/Dragon-Fruit-Juice-Recipe-_1ig.jpg",
+            "category": "Juice"
+        },
+        {
+            "id": 12,
+            "title": "Apple Juice",
+            "price": "15000",
+            "url": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/apple-juice.jpg",
+            "category": "Juice"
+        },
+        {
+            "id": 13,
+            "title": "Banana Juice",
+            "price":"20000",
+            "url": "https://www.organicfacts.net/wp-content/uploads/bananajuice.jpg",
+            "category": "Juice"
+        },
+        {
+            "id": 14,
+            "title": "Mango Juice",
+            "price":"20000",
+            "url": "https://healthmylifestyle.com/wp-content/uploads/2022/12/mango-juice-2-720x956.jpg",
+            "category": "Juice"
+        },
+        {
+            "id": 15,
+            "title": "Lime Juice",
+            "price": "25000",
+            "category":"Juice"
+        }
+    ]
+}

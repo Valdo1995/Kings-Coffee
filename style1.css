@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://anywebp.com/_next/image?url=%2Fimages%2Fcontent%2Fhome%2Fsample-before.jpg&w=1080&q=75.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
